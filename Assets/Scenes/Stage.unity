@@ -619,7 +619,7 @@ GameObject:
   - 114: {fileID: 363998731}
   - 222: {fileID: 363998734}
   m_Layer: 5
-  m_Name: MobileSingleStickControl
+  m_Name: MobileStick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1942,7 +1942,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2090570595}
   m_Layer: 0
-  m_Name: wall
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
