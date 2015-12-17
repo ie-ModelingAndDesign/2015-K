@@ -10,15 +10,15 @@ PlayerSettings:
   targetResolution: 0
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Unity Technologies Japan G.K
-  productName: ShootingGame
+  companyName: YourCompany
+  productName: ViNoApp
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
-  defaultScreenWidth: 1024
-  defaultScreenHeight: 768
-  defaultScreenWidthWeb: 600
-  defaultScreenHeightWeb: 450
+  defaultScreenWidth: 854
+  defaultScreenHeight: 480
+  defaultScreenWidthWeb: 854
+  defaultScreenHeightWeb: 480
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   m_ActiveColorSpace: 0
@@ -26,7 +26,7 @@ PlayerSettings:
   m_MobileMTRendering: 0
   m_Stereoscopic3D: 0
   iosShowActivityIndicatorOnLoading: -1
-  androidShowActivityIndicatorOnLoading: -1
+  androidShowActivityIndicatorOnLoading: 0
   iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 1
   iosAllowHTTPDownload: 1
@@ -37,7 +37,7 @@ PlayerSettings:
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
   disableDepthAndStencilBuffers: 0
-  defaultIsFullScreen: 1
+  defaultIsFullScreen: 0
   defaultIsNativeResolution: 1
   runInBackground: 0
   captureSingleScreen: 0
@@ -81,29 +81,29 @@ PlayerSettings:
   wiiUControllerCount: 0
   m_SupportedAspectRatios:
     4:3: 1
-    5:4: 0
-    16:10: 0
-    16:9: 0
-    Others: 0
-  bundleIdentifier: com.kyusyukeigo.test
+    5:4: 1
+    16:10: 1
+    16:9: 1
+    Others: 1
+  bundleIdentifier: com.YourCompany.ViNoApp
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
-  productGUID: 25786f404ad304ee39e0286958734e78
+  productGUID: 6a7f0512bdab94864adaa3bbcb092ab5
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2
   stripEngineCode: 1
-  iPhoneStrippingLevel: 2
+  iPhoneStrippingLevel: 0
   iPhoneScriptCallOptimization: 0
   iPhoneBuildNumber: 0
   ForceInternetPermission: 0
-  ForceSDCardPermission: 0
+  ForceSDCardPermission: 1
   CreateWallpaper: 0
   APKExpansionFiles: 0
   preloadShaders: 0
@@ -167,13 +167,7 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 128
       m_Height: 128
-  m_BuildTargetBatching:
-  - m_BuildTarget: iPhone
-    m_StaticBatching: 1
-    m_DynamicBatching: 1
-  - m_BuildTarget: Web
-    m_StaticBatching: 0
-    m_DynamicBatching: 1
+  m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs:
   - m_BuildTarget: WindowsStandaloneSupport
     m_APIs: 01000000
@@ -265,7 +259,7 @@ PlayerSettings:
   ps4ApplicationParam4: 0
   ps4DownloadDataSize: 0
   ps4GarlicHeapSize: 2048
-  ps4Passcode: 5PN2qmWqBlQ9wQj99nsQzldVI5ZuGXbE
+  ps4Passcode: 66MuCV6GXi5xr84P2R391UXaLHbavJvF
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -297,7 +291,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-  psp2PackagePassword: WRK5RhRXdCdG5nG5azdNMK66MuCV6GXi
+  psp2PackagePassword: ZGfO47XWS2qVOw5lxuBEBNue7b9PZS0h
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -338,7 +332,7 @@ PlayerSettings:
     16: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     17: MOBILE_INPUT
     20: MOBILE_INPUT
-  metroPackageName: ShootingGame
+  metroPackageName: UsingViNoFree1.004a
   metroPackageLogo: 
   metroPackageLogo140: 
   metroPackageLogo180: 
@@ -349,7 +343,7 @@ PlayerSettings:
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: ShootingGame
+  metroApplicationDescription: UsingViNoFree1.004a
   metroStoreTileLogo80: 
   metroStoreTileLogo: 
   metroStoreTileLogo140: 
@@ -390,7 +384,7 @@ PlayerSettings:
   metroPhoneSplashScreenImage240: 
   metroTileShortName: 
   metroCommandLineArgsFile: 
-  metroTileShowName: 1
+  metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
   metroWideTileShowName: 0
@@ -476,11 +470,11 @@ PlayerSettings:
   Standalone::ScriptingBackend: 0
   WebGL::ScriptingBackend: 1
   WebGL::audioCompressionFormat: 4
-  WebGL::exceptionSupport: 0
+  WebGL::exceptionSupport: 1
   WebGL::memorySize: 256
-  iOS::Architecture: 0
+  iOS::Architecture: 2
   iOS::EnableIncrementalBuildSupportForIl2cpp: 0
-  iOS::ScriptingBackend: 0
+  iOS::ScriptingBackend: 1
   boolPropertyNames:
   - WebGL::analyzeBuildSize
   - WebGL::dataCaching
