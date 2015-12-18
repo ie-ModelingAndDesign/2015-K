@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -10,6 +10,6 @@ public class textest : MonoBehaviour {
 	}
 
 	void Update () {
-		score.text = "てすと\n表示どうですか？";
+		score.text = "もでりんぐ K班\nLadys And Gentlemen!";
 	}
 }
