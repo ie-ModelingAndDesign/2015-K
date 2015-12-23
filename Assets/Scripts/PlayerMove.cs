@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
 	// 移動速度
 	public float speed = 3;
@@ -23,12 +23,16 @@ public class Player : MonoBehaviour
 				//Vector2 direction = new Vector2 (x, y);
 
 				// 移動方向と速度の代入
-				GetComponent<Rigidbody2D> ().velocity = direction * speed;
+				GetComponent<Rigidbody2D>().velocity = direction * speed;
+
+				FlagManager.Instance.flags[3] = true;
 			}
 			else
 			{
 				Vector2 direction = new Vector2 (0, 0).normalized;
 				GetComponent<Rigidbody2D> ().velocity = direction * speed;
+
+				FlagManager.Instance.flags[3] = false;
 			}
 		}
 
@@ -42,11 +46,15 @@ public class Player : MonoBehaviour
 
 				// 移動方向と速度の代入
 				GetComponent<Rigidbody2D> ().velocity = direction * speed;
+				
+				FlagManager.Instance.flags[3] = false;
 			}
 			else
 			{
 				Vector2 direction = new Vector2 (0, 0).normalized;
 				GetComponent<Rigidbody2D> ().velocity = direction * speed;
+
+				FlagManager.Instance.flags[3] = false;
 			}
 		}
 	}
