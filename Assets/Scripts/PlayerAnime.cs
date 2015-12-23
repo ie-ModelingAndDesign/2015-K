@@ -3,23 +3,45 @@ using System.Collections;
 
 public class PlayerAnime : MonoBehaviour
 {
-	private Animator anim;
+	private Animator anime;
 
 	void Start ()
 	{
-		anim = GetComponent<Animator>();
+		anime = GetComponent<Animator>();
 	}
 	
 	void Update ()
 	{
-		if (FlagManager.Instance.flags [3] == true)
+		if (FlagManager.Instance.flags [1] == true)
 		{
-			anim.SetBool ("changeW", true);
+			anime.SetBool ("changeN", true);
+			anime.SetBool ("changeS", false);
+			anime.SetBool ("changeW", false);
+			anime.SetBool ("changeE", false);
 		}
 
-		else
+		else if (FlagManager.Instance.flags [2] == true)
 		{
-			anim.SetBool ("changeW", false);
+			anime.SetBool ("changeN", false);
+			anime.SetBool ("changeS", true);
+			anime.SetBool ("changeW", false);
+			anime.SetBool ("changeE", false);
+		}
+
+		else if (FlagManager.Instance.flags [3] == true)
+		{
+			anime.SetBool ("changeN", false);
+			anime.SetBool ("changeS", false);
+			anime.SetBool ("changeW", true);
+			anime.SetBool ("changeE", false);
+		}
+
+		else if (FlagManager.Instance.flags [4] == true)
+		{
+			anime.SetBool ("changeN", false);
+			anime.SetBool ("changeS", false);
+			anime.SetBool ("changeW", false);
+			anime.SetBool ("changeE", true);
 		}
 	}
 }
