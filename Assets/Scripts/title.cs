@@ -4,6 +4,6 @@ using System.Collections;
 public class title : MonoBehaviour {
 	
 	public void SceneLoad (){
-		Application.LoadLevel ("stage");
+		Application.LoadLevel ("Stage");
 	}
 }
