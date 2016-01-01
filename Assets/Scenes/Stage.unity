@@ -372,7 +372,10 @@ RectTransform:
   - {fileID: 1377897773}
   - {fileID: 89221365}
   - {fileID: 1735237438}
+<<<<<<< HEAD
   - {fileID: 2045787826}
+=======
+>>>>>>> 312241917aacfaacbecd46c6f45482dd68705fd7
   - {fileID: 808618913}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1250,7 +1253,11 @@ RectTransform:
   m_LocalScale: {x: .855445504, y: .855445504, z: 1.90099001}
   m_Children: []
   m_Father: {fileID: 232891704}
+<<<<<<< HEAD
   m_RootOrder: 4
+=======
+  m_RootOrder: 3
+>>>>>>> 312241917aacfaacbecd46c6f45482dd68705fd7
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -400, y: -185}
