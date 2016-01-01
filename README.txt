@@ -1,9 +1,10 @@
 
-モデリングK班 (Ladys and gentlemen)   < 12/29(火) りどみ更新:145747B >
+モデリングK班 (Ladys and gentlemen)   < 2016/01/01(金) りどみ更新:145747B >
 
 =======
 
 ** とりあえず Assets/Scenes/title を実行してみてください **
+** ああああ **
 
 =======
 
@@ -35,12 +36,10 @@
  Wall		- 壁
   WallObjects	- オブジェクト(壁)置き場
   WallCollision	- 一部の壁の衝突判定用オブジェクト
- MainCanvas	- キャンバス部分(独立画面)
-  Canvas	- キャンバス。十字キーやテキストウィンドウ。
-  MobileStick	- 実操作部分(バーチャルパッド + 十字キー)
+ Canvas		- キャンバス。十字キーやテキストウィンドウ。
  MainCamera	- カメラ(視点用)。主人公を追随します。
- EventSystem	- 入力や衝突判定の対応
  FlagManager	- フラグの状態の可視化。煩雑なフラグ管理の手助けになれば。
+ EventSystem	- 入力や衝突判定の対応
  AudioSource	- BGM再生
 
 =======
