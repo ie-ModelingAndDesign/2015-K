@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
 	// 移動速度
 	public float speed = 3;
-	
+
 	void Update()
 	{
 		// 移動方向(左右)
@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour
 				FlagManager.Instance.flags[2] = false;
 				FlagManager.Instance.flags[3] = false;
 				FlagManager.Instance.flags[4] = false;
+				Debug.Log ("N");
 			}
 
 			else if (y <= -0.3)
@@ -34,6 +35,7 @@ public class PlayerMove : MonoBehaviour
 				FlagManager.Instance.flags[2] = true;
 				FlagManager.Instance.flags[3] = false;
 				FlagManager.Instance.flags[4] = false;
+				Debug.Log ("S");
 			}
 
 			else
@@ -53,6 +55,7 @@ public class PlayerMove : MonoBehaviour
 				FlagManager.Instance.flags[2] = false;
 				FlagManager.Instance.flags[3] = true;
 				FlagManager.Instance.flags[4] = false;
+				Debug.Log ("W");
 			}
 			
 			else if (0.3 <= x)
@@ -63,6 +66,7 @@ public class PlayerMove : MonoBehaviour
 				FlagManager.Instance.flags[2] = false;
 				FlagManager.Instance.flags[3] = false;
 				FlagManager.Instance.flags[4] = true;
+				Debug.Log ("E");
 			}
 			
 			else

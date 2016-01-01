@@ -10,6 +10,10 @@ public class textest : MonoBehaviour {
 	}
 
 	void Update () {
-		score.text = "もでりんぐ K班\nれでぃーす あんど じぇんとるめん\n1行につき 20文字まで 入るよ (’ ・ω ・｀)";
+		if (FlagManager.Instance.flags [10] == true) {
+			score.text = "bed";
+			FlagManager.Instance.flags [0] = false;
+			FlagManager.Instance.flags [10] = false;
+		}
 	}
 }

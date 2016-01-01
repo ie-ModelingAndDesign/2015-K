@@ -2110,6 +2110,7 @@ GameObject:
   - 4: {fileID: 1665205733}
   - 212: {fileID: 1665205735}
   - 61: {fileID: 1665205734}
+  - 114: {fileID: 1665205736}
   m_Layer: 0
   m_Name: bed
   m_TagString: Untagged
@@ -2168,6 +2169,17 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 974fc9264a7314cd29ba6cc703f42c26, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1665205736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1665205732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e548ea10cfc24ed0bdada9c8a4b137e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1678720788
 GameObject:
   m_ObjectHideFlags: 0

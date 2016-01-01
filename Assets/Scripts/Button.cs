@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Button : MonoBehaviour {
-
+	
 	// Use this for initialization
 	void Start () {
 	}
@@ -11,8 +11,11 @@ public class Button : MonoBehaviour {
 	void Update () {
 	}
 	
-	// do not touch -> false
+	// do not touch -> false add!
 	public void Click () {
-		FlagManager.Instance.flags [0] = true;
+		if (FlagManager.Instance.flags[5] == true)
+			FlagManager.Instance.flags[0] = true;
+		else
+			FlagManager.Instance.flags[0] = false;
 	}
 }
