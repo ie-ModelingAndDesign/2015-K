@@ -14,14 +14,16 @@ public class Cbed : MonoBehaviour {
 	void OnCollisionStay2D (Collision2D collision) {
 
 		Debug.Log ("collision bed");
-		FlagManager.Instance.flags [5] = true; //sessyoku
+		FlagManager.Instance.flags [6] = true; //sessyoku
 
-		if (FlagManager.Instance.flags [0] == true)
+		if (FlagManager.Instance.flags [0] == true) {
+			FlagManager.Instance.flags [0] = false;
 			FlagManager.Instance.flags [10] = true;
+		}
 	}
-
+	
 	void OnCollisionExit2D (Collision2D collision) {
 		Debug.Log ("collision bed exit");
-		FlagManager.Instance.flags [5] = false;
+		FlagManager.Instance.flags [6] = false;
 	}
 }
