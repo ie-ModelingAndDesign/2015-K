@@ -8,13 +8,18 @@ SceneSettings:
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
     smallestOccluder: 5
+<<<<<<< HEAD
     smallestHole: .25
+=======
+    smallestHole: 0.25
+>>>>>>> origin/e145717
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
   m_Fog: 0
+<<<<<<< HEAD
   m_FogColor: {r: .5, g: .5, b: .5, a: 1}
   m_FogMode: 3
   m_FogDensity: .00999999978
@@ -27,6 +32,20 @@ RenderSettings:
   m_AmbientMode: 0
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: .5
+=======
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+>>>>>>> origin/e145717
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -40,7 +59,11 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   serializedVersion: 5
+=======
+  serializedVersion: 6
+>>>>>>> origin/e145717
   m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
@@ -66,7 +89,11 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
+<<<<<<< HEAD
   m_LightmapSnapshot: {fileID: 0}
+=======
+  m_LightingDataAsset: {fileID: 0}
+>>>>>>> origin/e145717
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -74,15 +101,26 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     agentRadius: .5
     agentHeight: 2
     agentSlope: 45
     agentClimb: .400000006
+=======
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+>>>>>>> origin/e145717
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
+<<<<<<< HEAD
     cellSize: .166666672
+=======
+    cellSize: 0.16666667
+>>>>>>> origin/e145717
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &519618933
@@ -118,7 +156,11 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
+<<<<<<< HEAD
   m_Pivot: {x: .5, y: .5}
+=======
+  m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>> origin/e145717
 --- !u!114 &519618935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +173,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+=======
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+>>>>>>> origin/e145717
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -146,6 +192,10 @@ MonoBehaviour:
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
+<<<<<<< HEAD
+=======
+    m_AlignByGeometry: 0
+>>>>>>> origin/e145717
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -213,6 +263,10 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+<<<<<<< HEAD
+=======
+    m_RotationOrder: 4
+>>>>>>> origin/e145717
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -223,6 +277,10 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+<<<<<<< HEAD
+=======
+    m_RotationOrder: 0
+>>>>>>> origin/e145717
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -233,6 +291,10 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+<<<<<<< HEAD
+=======
+    m_RotationOrder: 4
+>>>>>>> origin/e145717
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -243,6 +305,10 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+<<<<<<< HEAD
+=======
+    m_RotationOrder: 0
+>>>>>>> origin/e145717
 --- !u!4 &528199197
 Transform:
   m_ObjectHideFlags: 0
@@ -280,7 +346,11 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 1
+<<<<<<< HEAD
   m_Color: {r: 1, g: .956862748, b: .839215696, a: 1}
+=======
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+>>>>>>> origin/e145717
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -289,8 +359,14 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_Strength: 1
+<<<<<<< HEAD
     m_Bias: .0500000007
     m_NormalBias: .400000006
+=======
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+>>>>>>> origin/e145717
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
@@ -309,7 +385,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534689815}
+<<<<<<< HEAD
   m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381676, w: .875426054}
+=======
+  m_LocalRotation: {x: 0.40821794, y: -0.23456973, z: 0.109381676, w: 0.87542605}
+>>>>>>> origin/e145717
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -364,12 +444,21 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
+<<<<<<< HEAD
     m_NormalColor: {r: .213235319, g: .156790674, b: .156790674, a: 1}
     m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
     m_PressedColor: {r: .639705896, g: .16933392, b: .16933392, a: 1}
     m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
+=======
+    m_NormalColor: {r: 0.21323532, g: 0.15679067, b: 0.15679067, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.6397059, g: 0.16933392, b: 0.16933392, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+>>>>>>> origin/e145717
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -443,11 +532,19 @@ RectTransform:
   - {fileID: 519618934}
   m_Father: {fileID: 983568088}
   m_RootOrder: 0
+<<<<<<< HEAD
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -250, y: -40}
   m_SizeDelta: {x: 280, y: 80}
   m_Pivot: {x: .5, y: .5}
+=======
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -250, y: -40}
+  m_SizeDelta: {x: 280, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>> origin/e145717
 --- !u!1 &983568087
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,6 +635,10 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
+=======
+  m_TargetDisplay: 0
+>>>>>>> origin/e145717
 --- !u!1 &995546638
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +685,11 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+<<<<<<< HEAD
   m_RepeatDelay: .5
+=======
+  m_RepeatDelay: 0.5
+>>>>>>> origin/e145717
   m_ForceModuleActive: 0
 --- !u!114 &995546641
 MonoBehaviour:
@@ -661,14 +766,22 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
+<<<<<<< HEAD
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
+=======
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
+>>>>>>> origin/e145717
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
+<<<<<<< HEAD
   near clip plane: .300000012
+=======
+  near clip plane: 0.3
+>>>>>>> origin/e145717
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -684,7 +797,11 @@ Camera:
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
+<<<<<<< HEAD
   m_StereoSeparation: .0219999999
+=======
+  m_StereoSeparation: 0.022
+>>>>>>> origin/e145717
   m_StereoMirrorMode: 0
 --- !u!4 &1708326128
 Transform:
@@ -732,14 +849,26 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+<<<<<<< HEAD
   m_ImportantGI: 0
   m_AutoUVMaxDistance: .5
+=======
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+>>>>>>> origin/e145717
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e5cbfa459233948f4aa08ca2470571eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD
+=======
+  m_FlipX: 0
+  m_FlipY: 0
+>>>>>>> origin/e145717
 --- !u!4 &1793542469
 Transform:
   m_ObjectHideFlags: 0

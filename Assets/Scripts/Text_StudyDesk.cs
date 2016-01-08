@@ -5,6 +5,10 @@ using UnityEngine.UI;
 public class Text_StudyDesk : MonoBehaviour {
 	
 	public Text score;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/e145717
 	
 	void Start () {
 		FlagManager.Instance.flags [101] = false;
@@ -23,7 +27,13 @@ public class Text_StudyDesk : MonoBehaviour {
 		if (FlagManager.Instance.flags [13] == true)
 		{
 			score.text = "学習机だ。";
+<<<<<<< HEAD
 			
+=======
+
+
+
+>>>>>>> origin/e145717
 			if (FlagManager.Instance.flags [121] == false)
 			{
 				WaitTime();
@@ -53,7 +63,13 @@ public class Text_StudyDesk : MonoBehaviour {
 				if (FlagManager.Instance.flags [122] == true)
 				{
 					score.text = "引き出しには、学校の教科書が置いてある。\n教科書は開いていないので、まだまだきれい。";
+<<<<<<< HEAD
 					
+=======
+
+
+
+>>>>>>> origin/e145717
 					if (FlagManager.Instance.flags [123] == false)
                     {
                         WaitTime();
