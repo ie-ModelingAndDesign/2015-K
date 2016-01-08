@@ -7,10 +7,7 @@ public class Camera : MonoBehaviour {
 
 	void Start () {
 		Player = GameObject.Find("Player"); 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/e145717
 	}
 
     //カメラの初期位置の指定
