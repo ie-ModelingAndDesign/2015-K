@@ -18,6 +18,7 @@ public class C_StudyDesk : MonoBehaviour {
 		
 		if (FlagManager.Instance.flags [0] == true) {
 			FlagManager.Instance.flags [0] = false;
+			FlagManager.Instance.flags [8] = true;
 			FlagManager.Instance.flags [13] = true;
 		}
 	}

@@ -56,6 +56,7 @@ public class Text_Bed : MonoBehaviour {
 					score.text = "";
 
 					WaitTime();
+					FlagManager.Instance.flags [8] = false;
 					FlagManager.Instance.flags [11] = false;
 				}
 			}

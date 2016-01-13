@@ -14,4 +14,9 @@ public class Inactive : MonoBehaviour {
 	void Update () {
 
 	}
+
+	public void Click () {
+		gameObject.SetActive(false);
+		FlagManager.Instance.flags [7] = false;
+	}
 }
