@@ -11,7 +11,7 @@ public class PlayerMove : MonoBehaviour
 		float x = CrossPlatformInputManager.GetAxisRaw ("Horizontal");
 		float y = CrossPlatformInputManager.GetAxisRaw ("Vertical");
 
-		if (FlagManager.Instance.flags[101] == false)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags[101] == false)
 		{
 			if (-0.3 <= x && x <= 0.3)
 			{

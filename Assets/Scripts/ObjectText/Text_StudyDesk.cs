@@ -21,7 +21,7 @@ public class Text_StudyDesk : MonoBehaviour {
 	// 22文字まで(全角・句読点含む)
 	
 	void Update () {
-		if (FlagManager.Instance.flags [13] == true)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [13] == true)
 		{
 			score.text = "学習机だ。";
 

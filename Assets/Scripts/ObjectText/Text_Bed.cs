@@ -1,12 +1,13 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class Text_Shelf : MonoBehaviour {
-	
+public class Text_Bed : MonoBehaviour {
+
 	public Text score;
-	
+
 	void Start () {
+
 		FlagManager.Instance.flags [101] = false;
 		FlagManager.Instance.flags [121] = false;
 		FlagManager.Instance.flags [122] = false;
@@ -16,52 +17,52 @@ public class Text_Shelf : MonoBehaviour {
 		FlagManager.Instance.flags [126] = false;
 		FlagManager.Instance.flags [127] = false;
 	}
-	
-	// 22文字まで(全角・句読点含む)
-	
+    
+    // 22文字まで(全角・句読点含む)
+
 	void Update () {
-		if (FlagManager.Instance.flags [12] == true)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [11] == true)
 		{
-			score.text = "食料を入れていた棚だ。\n今は、中には何も入っていない。";
-			
+			score.text = "私の使っているベッドだ。";
+
 			if (FlagManager.Instance.flags [121] == false)
 			{
 				WaitTime();
-				
+
 				if (FlagManager.Instance.flags [0] == true)
 				{
 					FlagManager.Instance.flags [121] = true;
 					FlagManager.Instance.flags [101] = false;
 				}
 			}
-			
+
 			if (FlagManager.Instance.flags [121] == true)
 			{
-				score.text = "おなかがすいた…\nはやく食べ物を探さないと…";
-				
+				score.text = "少し前までここで眠っていたので、\nちょっとだけあたたかい。";
+
 				if (FlagManager.Instance.flags [122] == false)
 				{
 					WaitTime();
-					
+
 					if (FlagManager.Instance.flags [0] == true)
 					{
 						FlagManager.Instance.flags [122] = true;
 						FlagManager.Instance.flags [101] = false;
 					}
 				}
-				
+
 				if (FlagManager.Instance.flags [122] == true)
 				{
 					score.text = "";
-					
+
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;
-					FlagManager.Instance.flags [12] = false;
+					FlagManager.Instance.flags [11] = false;
 				}
 			}
 		}
 	}
-	
+
 	void WaitTime()
 	{
 		if (FlagManager.Instance.flags [101] == false)

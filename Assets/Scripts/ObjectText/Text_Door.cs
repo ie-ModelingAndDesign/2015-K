@@ -20,7 +20,7 @@ public class Text_Door : MonoBehaviour {
 	// 22文字まで(全角・句読点含む)
 	
 	void Update () {
-		if (FlagManager.Instance.flags [10] == true)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [10] == true)
 		{
 			score.text = "ドアだ。\nこの扉で、部屋と外は完全に仕切られている。";
 			
