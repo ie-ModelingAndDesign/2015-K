@@ -2,12 +2,12 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class Text_ShelfNU : MonoBehaviour {
-	
+public class Text_Picture : MonoBehaviour {
+
 	public Text score;
 	
-	
 	void Start () {
+		
 		FlagManager.Instance.flags [101] = false;
 		FlagManager.Instance.flags [121] = false;
 		FlagManager.Instance.flags [122] = false;
@@ -21,10 +21,9 @@ public class Text_ShelfNU : MonoBehaviour {
 	// 22文字まで(全角・句読点含む)
 	
 	void Update () {
-		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [14] == true)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [15] == true)
 		{
-			score.text = "本棚だ。たくさんの本が入っている。";
-			
+			score.text = "壁に絵がかかっている。";
 			
 			if (FlagManager.Instance.flags [121] == false)
 			{
@@ -39,7 +38,7 @@ public class Text_ShelfNU : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [121] == true)
 			{
-				score.text = "この本棚には昔から、\n絵本や小説など、色々な本が置いてあった。";
+				score.text = "絵にはきれいな女の人が描かれている。\nだれだろう？";
 				
 				if (FlagManager.Instance.flags [122] == false)
 				{
@@ -54,29 +53,11 @@ public class Text_ShelfNU : MonoBehaviour {
 				
 				if (FlagManager.Instance.flags [122] == true)
 				{
-					score.text = "いつか全部読んでみたいな…";
+					score.text = "";
 					
-					
-					
-					if (FlagManager.Instance.flags [123] == false)
-					{
-						WaitTime();
-						
-						if (FlagManager.Instance.flags [0] == true)
-						{
-							FlagManager.Instance.flags [123] = true;
-							FlagManager.Instance.flags [101] = false;
-						}
-					}
-					
-					if (FlagManager.Instance.flags [123] == true)
-					{
-						score.text = "";
-						
-						WaitTime();
-						FlagManager.Instance.flags [8] = false;
-						FlagManager.Instance.flags [14] = false;
-					}
+					WaitTime();
+					FlagManager.Instance.flags [8] = false;
+					FlagManager.Instance.flags [15] = false;
 				}
 			}
 		}
