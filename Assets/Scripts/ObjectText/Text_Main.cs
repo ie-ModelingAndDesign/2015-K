@@ -20,9 +20,9 @@ public class Text_Main : MonoBehaviour {
 	// 22文字まで(全角・句読点含む)
 	
 	void Update () {
-		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [18] == true)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [102] == false && FlagManager.Instance.flags [103] == false && FlagManager.Instance.flags [104] == false && FlagManager.Instance.flags [105] == false && FlagManager.Instance.flags [106] == false && FlagManager.Instance.flags [107] == false && FlagManager.Instance.flags [108] == false && FlagManager.Instance.flags [109] == false && FlagManager.Instance.flags [110] == false)
 		{
-			GameObject gameObject = this.transform.Find ("Main").gameObject;
+			GameObject gameObject = this.transform.Find ("MainPIC").gameObject;
 			gameObject.SetActive(true);
 
 			score.text = "とても大きなタンスだ。\n全部で9個の引き出しが付いている。";
@@ -50,18 +50,32 @@ public class Text_Main : MonoBehaviour {
 					{
 						FlagManager.Instance.flags [122] = true;
 						FlagManager.Instance.flags [101] = false;
+
+						GameObject gameObjectB1 = this.transform.Find ("ButtonNW").gameObject;
+						gameObjectB1.SetActive(true);
+						GameObject gameObjectB2 = this.transform.Find ("ButtonN").gameObject;
+						gameObjectB2.SetActive(true);
+						GameObject gameObjectB3 = this.transform.Find ("ButtonNE").gameObject;
+						gameObjectB3.SetActive(true);
+						GameObject gameObjectB4 = this.transform.Find ("ButtonW").gameObject;
+						gameObjectB4.SetActive(true);
+						GameObject gameObjectB5 = this.transform.Find ("ButtonC").gameObject;
+						gameObjectB5.SetActive(true);
+						GameObject gameObjectB6 = this.transform.Find ("ButtonE").gameObject;
+						gameObjectB6.SetActive(true);
+						GameObject gameObjectB7 = this.transform.Find ("ButtonSW").gameObject;
+						gameObjectB7.SetActive(true);
+						GameObject gameObjectB8 = this.transform.Find ("ButtonS").gameObject;
+						gameObjectB8.SetActive(true);
+						GameObject gameObjectB9 = this.transform.Find ("ButtonSE").gameObject;
+						gameObjectB9.SetActive(true);
 					}
 				}
 				
 				if (FlagManager.Instance.flags [122] == true)
 				{
-					score.text = "";
-					
+					score.text = "どこを調べようかな？";
 					WaitTime();
-					FlagManager.Instance.flags [8] = false;
-					FlagManager.Instance.flags [18] = false;
-
-					gameObject.SetActive(false);
 				}
 			}
 		}
