@@ -14,7 +14,7 @@ public class Text_MainE : MonoBehaviour {
 	void Update () {
 		if (FlagManager.Instance.flags[107] == true && FlagManager.Instance.flags [18] == true)
 		{
-			score.text = "右の引き出しを開けた。";
+			score.text = "右の引き出しは開かない…";
 
 			GameObject gameObject = this.transform.Find ("MainPIC").gameObject;
 			gameObject.SetActive(false);
@@ -32,7 +32,7 @@ public class Text_MainE : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [123] == true)
 			{
-				score.text = "中は空っぽのようだ。\n特にめぼしいものは見当たらない…";
+				score.text = "鍵がかかっている。\n開けるには鍵が必要みたい…";
 				
 				if (FlagManager.Instance.flags [124] == false)
 				{
