@@ -182,7 +182,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &254833711
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +237,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: .100000001}
   m_Children: []
   m_Father: {fileID: 271773375}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &254833714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,12 +341,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1400369844}
   - {fileID: 1542291029}
   - {fileID: 254833713}
   - {fileID: 414384764}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &414384763
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +374,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: .100000001}
   m_Children: []
   m_Father: {fileID: 271773375}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!212 &414384765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -762,7 +761,7 @@ Transform:
   m_LocalScale: {x: 300, y: 300, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1283070211
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,10 +966,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1764963867}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1400369840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,8 +1054,8 @@ RectTransform:
   - {fileID: 1283070215}
   - {fileID: 1013477097}
   - {fileID: 1686583104}
-  m_Father: {fileID: 271773375}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1163,7 +1161,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: .100000001}
   m_Children: []
   m_Father: {fileID: 271773375}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!212 &1542291030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1379,7 +1377,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 4}
   m_LocalScale: {x: 300, y: 300, z: 1}
   m_Children: []
-  m_Father: {fileID: 1298240705}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!212 &1764963868
 SpriteRenderer:
