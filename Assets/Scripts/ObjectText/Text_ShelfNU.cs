@@ -21,7 +21,7 @@ public class Text_ShelfNU : MonoBehaviour {
 	// 22文字まで(全角・句読点含む)
 	
 	void Update () {
-		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [14] == true)
+		if (FlagManager.Instance.flags [7] == false && FlagManager.Instance.flags [14] == true)
 		{
 			score.text = "本棚だ。たくさんの本が入っている。";
 			

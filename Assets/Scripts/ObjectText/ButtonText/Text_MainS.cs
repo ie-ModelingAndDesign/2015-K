@@ -12,7 +12,7 @@ public class Text_MainS : MonoBehaviour {
 	// 22文字まで(全角・句読点含む)
 	
 	void Update () {
-		if (FlagManager.Instance.flags[109] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [42] == false)
+		if (FlagManager.Instance.flags[109] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [42] == false && FlagManager.Instance.flags [81] == false)
 		{
 			score.text = "下の引き出しは開かない…";
 
@@ -113,7 +113,7 @@ public class Text_MainS : MonoBehaviour {
 			}
 		}
 
-		if (FlagManager.Instance.flags[109] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [42] == true && FlagManager.Instance.flags [81] == true)
+		if (FlagManager.Instance.flags[109] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [81] == true)
 		{
 			score.text = "丸形の鍵で開いた引き出しだ。\nここには、紙切れと鍵と時計が入っていた。";
 			
