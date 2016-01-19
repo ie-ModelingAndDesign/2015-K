@@ -79,7 +79,7 @@ public class Text_MainS : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [123] == true)
 			{
-				score.text = "中には時計と1枚の紙切れが入っている…\nどういうことだろう…";
+				score.text = "中には時計と鍵、紙切れが入っている…\nどういうことだろう…";
 
                 GameObject gameObjectKami1 = this.transform.Find ("Kami1PIC").gameObject;
                 gameObjectKami1.SetActive(true);
@@ -94,7 +94,7 @@ public class Text_MainS : MonoBehaviour {
 						FlagManager.Instance.flags [101] = false;
 					}
 				}
-				
+
 				if (FlagManager.Instance.flags [124] == true)
 				{
 					score.text = "";
@@ -106,6 +106,7 @@ public class Text_MainS : MonoBehaviour {
 					FlagManager.Instance.flags [8] = false;
 					FlagManager.Instance.flags [18] = false;
                     FlagManager.Instance.flags [61] = true;
+					FlagManager.Instance.flags [63] = true;
                     FlagManager.Instance.flags [81] = true;
 					FlagManager.Instance.flags [109] = false;
 				}
@@ -114,7 +115,7 @@ public class Text_MainS : MonoBehaviour {
 
 		if (FlagManager.Instance.flags[109] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [42] == true && FlagManager.Instance.flags [81] == true)
 		{
-			score.text = "丸形の鍵で開いた引き出しだ。\nここには、紙切れ1枚と時計が入っていた。";
+			score.text = "丸形の鍵で開いた引き出しだ。\nここには、紙切れと鍵と時計が入っていた。";
 			
 			GameObject gameObject = this.transform.Find ("MainPIC").gameObject;
 			gameObject.SetActive(false);
@@ -134,13 +135,10 @@ public class Text_MainS : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [123] == true)
 			{
-				score.text = "時計はデジタル式だ。\n電池はないので、時刻は示してくれていない。\nさっきの紙切れと何か関係があるのかな…";
+				score.text = "時計はデジタル式だ。\n電池はないので、時刻は示してくれていない。\n一緒に入っていたものと関係があるのかな…";
 				
 				GameObject gameObjectClock = this.transform.Find ("ClockPIC").gameObject;
 				gameObjectClock.SetActive(true);
-				
-				FlagManager.Instance.flags [61] = true;
-				FlagManager.Instance.flags [81] = true;
 				
 				if (FlagManager.Instance.flags [124] == false)
 				{

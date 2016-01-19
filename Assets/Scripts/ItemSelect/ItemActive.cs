@@ -26,6 +26,11 @@ public class ItemActive : MonoBehaviour {
 			gameObject1.SetActive(true);
 		}
 
+		if (FlagManager.Instance.flags [63] == true) {
+			GameObject gameObject1 = this.transform.Find ("key2").gameObject;
+			gameObject1.SetActive(true);
+		}
+
 		//sonota tuika 61,62,...
 	}
 }
