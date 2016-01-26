@@ -32,7 +32,9 @@ public class Text_MainC : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [123] == true)
 			{
-				score.text = "中は空っぽのようだ。\n特にめぼしいものは見当たらない…";
+				score.text = "中には金庫のようなものがはいっている";
+				GameObject gameObjectS1 = transform.Find ("safe").gameObject;
+				gameObjectS1.SetActive(true);
 				
 				if (FlagManager.Instance.flags [124] == false)
 				{

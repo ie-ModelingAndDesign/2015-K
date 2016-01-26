@@ -8,6 +8,7 @@ public class Button_C : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 		
 	}
 	
@@ -15,9 +16,10 @@ public class Button_C : MonoBehaviour {
 	void Update () {
 		
 	}
-	
+
 	public void Click () {
-		
+
+
 		GameObject gameObjectB1 = this.transform.Find ("ButtonNW").gameObject;
 		gameObjectB1.SetActive(false);
 		GameObject gameObjectB2 = this.transform.Find ("ButtonN").gameObject;
@@ -36,8 +38,11 @@ public class Button_C : MonoBehaviour {
 		gameObjectB8.SetActive(false);
 		GameObject gameObjectB9 = this.transform.Find ("ButtonSE").gameObject;
 		gameObjectB9.SetActive(false);
+
+
 		
 		FlagManager.Instance.flags [7] = false;
 		FlagManager.Instance.flags [106] = true;
+
 	}
 }
