@@ -13,7 +13,7 @@ public class C_Door : MonoBehaviour {
 	
 	void OnCollisionStay2D (Collision2D collision) {
 		
-		Debug.Log ("collision bed");
+		Debug.Log ("collision Door");
 		FlagManager.Instance.flags [6] = true; //sessyoku
 		
 		if (FlagManager.Instance.flags [0] == true) {
