@@ -13,9 +13,9 @@ public class PlayerMove : MonoBehaviour
 
 		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags[101] == false)
 		{
-			if (-0.3 <= x && x <= 0.3)
+			if (-0.5 <= x && x <= 0.5)
 			{
-				if (0.3 <= y)
+				if (0.5 <= y)
 				{
 					Vector2 direction = new Vector2 (0, y).normalized;
 					GetComponent<Rigidbody2D>().velocity = direction * speed;
@@ -26,7 +26,7 @@ public class PlayerMove : MonoBehaviour
 					Debug.Log ("N");
 				}
 
-				else if (y <= -0.3)
+				else if (y <= -0.5)
 				{
 					Vector2 direction = new Vector2 (0, y).normalized;
 					GetComponent<Rigidbody2D>().velocity = direction * speed;
@@ -44,9 +44,9 @@ public class PlayerMove : MonoBehaviour
 				}
 			}
 
-			else if (-0.3 <= y && y <= 0.3)
+			else if (-0.5 <= y && y <= 0.5)
 			{
-				if (x <= -0.3)
+				if (x <= -0.5)
 				{
 					Vector2 direction = new Vector2 (x, 0).normalized;
 					GetComponent<Rigidbody2D>().velocity = direction * speed;
@@ -57,7 +57,7 @@ public class PlayerMove : MonoBehaviour
 					Debug.Log ("W");
 				}
 
-				else if (0.3 <= x)
+				else if (0.5 <= x)
 				{
 					Vector2 direction = new Vector2 (x, 0).normalized;
 					GetComponent<Rigidbody2D>().velocity = direction * speed;
