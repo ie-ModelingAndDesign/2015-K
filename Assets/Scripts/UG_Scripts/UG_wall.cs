@@ -22,11 +22,9 @@ public class UG_wall : MonoBehaviour {
 
 		Debug.Log ("collision wall");
 		FlagManager.Instance.flags [21] = true;
+	//	FlagManager.Instance.flags [25] = true;
 
 		Player.gameObject.transform.position = StartPos;
-
 	}
-
-
 
 }
