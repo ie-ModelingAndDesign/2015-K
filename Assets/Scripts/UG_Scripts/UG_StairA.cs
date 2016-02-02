@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class UG_Stair2 : MonoBehaviour {
+public class UG_StairA : MonoBehaviour {
 
 	public Text score;
 	
