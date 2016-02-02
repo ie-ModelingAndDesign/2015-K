@@ -16,7 +16,7 @@ public class UG_wall_goal_text: MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (FlagManager.Instance.flags [22] == true) {
+		if (FlagManager.Instance.flags [23] == true) {
 
 
 			FlagManager.Instance.flags [101] = true;
@@ -28,7 +28,7 @@ public class UG_wall_goal_text: MonoBehaviour {
 				score.text = "";
 
 				FlagManager.Instance.flags [0] = false;
-				FlagManager.Instance.flags [22] = false;
+				FlagManager.Instance.flags [23] = false;
 				FlagManager.Instance.flags [101] = false;
 				Application.LoadLevel ("Stage");
 

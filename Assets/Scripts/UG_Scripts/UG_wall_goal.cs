@@ -17,7 +17,7 @@ public class UG_wall_goal : MonoBehaviour {
 		
 
 		Debug.Log ("collision wall");
-		FlagManager.Instance.flags [22] = true;
+		FlagManager.Instance.flags [23] = true;
 
 	}
 }

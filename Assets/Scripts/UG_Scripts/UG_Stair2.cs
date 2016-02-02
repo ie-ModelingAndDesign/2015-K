@@ -1,18 +1,11 @@
-﻿/*****
- * 
- * if this source cord use -> flag 25 ON , and UG_Button.cs flag 25 add 
- * 
- */
-
-/***
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class UG_text_wall : MonoBehaviour {
+public class UG_Stair2 : MonoBehaviour {
 
 	public Text score;
-
+	
 	void Start () {
 		FlagManager.Instance.flags [101] = false;
 		FlagManager.Instance.flags [121] = false;
@@ -23,14 +16,15 @@ public class UG_text_wall : MonoBehaviour {
 		FlagManager.Instance.flags [126] = false;
 		FlagManager.Instance.flags [127] = false;
 	}
-
+	
 	// 22文字まで(全角・句読点含む)
-
+	
 	void Update () {
-		if (FlagManager.Instance.flags [22] == true)
-		{
-			score.text = "あれ？\nいつのまにか戻ってきたみたい";
 
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [21] == true)
+		{
+			score.text = "ここに降りてきた階段だ。\n一度、部屋に戻ろうかな。";
+			
 			if (FlagManager.Instance.flags [121] == false)
 			{
 				WaitTime();
@@ -41,15 +35,15 @@ public class UG_text_wall : MonoBehaviour {
 					FlagManager.Instance.flags [101] = false;
 				}
 			}
-
+			
 			if (FlagManager.Instance.flags [121] == true)
 			{
 				score.text = "";
 
 				WaitTime();
 				FlagManager.Instance.flags [8] = false;
-				FlagManager.Instance.flags [22] = false;
-				FlagManager.Instance.flags [25] = false;
+				FlagManager.Instance.flags [21] = false;
+				Application.LoadLevel ("Stage");
 			}
 		}
 
@@ -65,7 +59,7 @@ public class UG_text_wall : MonoBehaviour {
 			FlagManager.Instance.flags [127] = false;
 		}
 	}
-
+	
 	void WaitTime()
 	{
 		if (FlagManager.Instance.flags [101] == false)
@@ -74,6 +68,4 @@ public class UG_text_wall : MonoBehaviour {
 			FlagManager.Instance.flags [101] = true;
 		}
 	}
-	
 }
-***/
