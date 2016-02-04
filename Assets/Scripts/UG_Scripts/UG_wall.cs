@@ -21,7 +21,7 @@ public class UG_wall : MonoBehaviour {
 	void OnCollisionStay2D (Collision2D collision) {
 
 		Debug.Log ("collision wall");
-		FlagManager.Instance.flags [22] = true;
+	//	FlagManager.Instance.flags [22] = true;
 	//	FlagManager.Instance.flags [25] = true;
 
 		Player.gameObject.transform.position = StartPos;

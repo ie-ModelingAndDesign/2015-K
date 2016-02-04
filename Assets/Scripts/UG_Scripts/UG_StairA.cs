@@ -47,7 +47,7 @@ public class UG_StairA : MonoBehaviour {
 			}
 		}
 
-		else if (FlagManager.Instance.flags [21] == false && FlagManager.Instance.flags [22] == false && FlagManager.Instance.flags [23] == false && FlagManager.Instance.flags [24] == false)
+		else if (FlagManager.Instance.flags [21] == false && FlagManager.Instance.flags [22] == false && FlagManager.Instance.flags [23] == false && FlagManager.Instance.flags [24] == false && FlagManager.Instance.flags [26] == false)
 		{
 			FlagManager.Instance.flags [101] = false;
 			FlagManager.Instance.flags [121] = false;
