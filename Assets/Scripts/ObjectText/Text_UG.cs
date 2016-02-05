@@ -21,7 +21,7 @@ public class Text_UG : MonoBehaviour {
 	
 	void Update () {
 
-		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [19] == true && FlagManager.Instance.flags [85] == false)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [19] == true && FlagManager.Instance.flags [85] == false && FlagManager.Instance.flags [86] == false && FlagManager.Instance.flags [87] == false)
 		{
 			score.text = "床に不自然なくぼみがある。\nつかんで持ち上げられそうだ。";
 			
@@ -64,7 +64,7 @@ public class Text_UG : MonoBehaviour {
 			}
 		}
 
-		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [19] == true && FlagManager.Instance.flags [85] == true)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [19] == true && FlagManager.Instance.flags [85] == true && FlagManager.Instance.flags [86] == false && FlagManager.Instance.flags [87] == false)
 		{
 			score.text = "地下につづく階段だ。\n少しだけ入ってみようかな…";
 			
@@ -90,6 +90,91 @@ public class Text_UG : MonoBehaviour {
 			}
 		}
 
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [19] == true && FlagManager.Instance.flags [85] == true && FlagManager.Instance.flags [86] == true && FlagManager.Instance.flags [87] == false)
+		{
+			// false root
+
+			score.text = "地下につづく階段だ。\n地下の壁には、'ニバンメノコタエハゼロ'\nと書かれていた。";
+			
+			if (FlagManager.Instance.flags [121] == false)
+			{
+				WaitTime();
+				
+				if (FlagManager.Instance.flags [0] == true)
+				{
+					FlagManager.Instance.flags [121] = true;
+					FlagManager.Instance.flags [101] = false;
+				}
+			}
+			
+			if (FlagManager.Instance.flags [121] == true)
+			{
+				score.text = "暗くて怖いので、もう入るのはやめておこう…";
+				
+				if (FlagManager.Instance.flags [122] == false)
+				{
+					WaitTime();
+					
+					if (FlagManager.Instance.flags [0] == true)
+					{
+						FlagManager.Instance.flags [122] = true;
+						FlagManager.Instance.flags [101] = false;
+					}
+				}
+				
+				if (FlagManager.Instance.flags [122] == true)
+				{
+					score.text = "";
+					
+					WaitTime();
+					FlagManager.Instance.flags [8] = false;
+					FlagManager.Instance.flags [19] = false;
+				}
+			}
+		}
+
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [19] == true && FlagManager.Instance.flags [85] == true && FlagManager.Instance.flags [86] == true && FlagManager.Instance.flags [87] == true)
+		{
+			// true root
+			
+			score.text = "地下につづく階段だ。\n地下の壁には、'ニバンメノコタエハナナ'\nと書かれていた。";
+			
+			if (FlagManager.Instance.flags [121] == false)
+			{
+				WaitTime();
+				
+				if (FlagManager.Instance.flags [0] == true)
+				{
+					FlagManager.Instance.flags [121] = true;
+					FlagManager.Instance.flags [101] = false;
+				}
+			}
+			
+			if (FlagManager.Instance.flags [121] == true)
+			{
+				score.text = "階段の底は暗然としている。\n暗くて怖いので、もう入るのはやめておこう…";
+				
+				if (FlagManager.Instance.flags [122] == false)
+				{
+					WaitTime();
+					
+					if (FlagManager.Instance.flags [0] == true)
+					{
+						FlagManager.Instance.flags [122] = true;
+						FlagManager.Instance.flags [101] = false;
+					}
+				}
+				
+				if (FlagManager.Instance.flags [122] == true)
+				{
+					score.text = "";
+					
+					WaitTime();
+					FlagManager.Instance.flags [8] = false;
+					FlagManager.Instance.flags [19] = false;
+				}
+			}
+		}
 
 		else if (FlagManager.Instance.flags [10] == false && FlagManager.Instance.flags [11] == false && FlagManager.Instance.flags [12] == false && FlagManager.Instance.flags [13] == false && FlagManager.Instance.flags [14] == false && FlagManager.Instance.flags [15] == false && FlagManager.Instance.flags [16] == false && FlagManager.Instance.flags [17] == false && FlagManager.Instance.flags [18] == false && FlagManager.Instance.flags [19] == false)
 		{

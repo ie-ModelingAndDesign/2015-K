@@ -66,6 +66,7 @@ public class UG_wall_goal_text: MonoBehaviour {
 					FlagManager.Instance.flags [23] = false;
 					FlagManager.Instance.flags [66] = true;
 					FlagManager.Instance.flags [86] = true;
+					FlagManager.Instance.flags [87] = true;
 					Application.LoadLevel ("Stage");
 				}
 			}
