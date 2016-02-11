@@ -14,10 +14,19 @@ public class UG_Button : MonoBehaviour {
 	}
 
 	public void Click () {
-		
-		FlagManager.Instance.flags [0] = true;
-		Debug.Log ("hogeee");
 
+		if (FlagManager.Instance.flags [6] == true) {
+			Debug.Log ("mymt");
+			FlagManager.Instance.flags [0] = true;
+		}
+
+	/*
+		if (FlagManager.Instance.flags [25] == true) {
+			Debug.Log ("moved");
+			FlagManager.Instance.flags [0] = true;
+	*/
+
+		else
+			FlagManager.Instance.flags [0] = false;
 	}
-
 }
