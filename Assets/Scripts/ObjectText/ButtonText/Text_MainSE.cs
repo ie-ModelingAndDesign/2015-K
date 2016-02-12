@@ -18,6 +18,8 @@ public class Text_MainSE : MonoBehaviour {
 
 			GameObject gameObject = this.transform.Find ("MainPIC").gameObject;
 			gameObject.SetActive(false);
+			GameObject gameObject2 = this.transform.Find ("MainPIC2").gameObject;
+			gameObject2.SetActive(true);
 			
 			if (FlagManager.Instance.flags [123] == false)
 			{
@@ -37,6 +39,19 @@ public class Text_MainSE : MonoBehaviour {
                 GameObject gameObjectKey1 = this.transform.Find ("Key1PIC").gameObject;
                 gameObjectKey1.SetActive(true);
 
+				GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+				GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+				GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+				GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+				GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+
+				gameObjectPlayer1.SetActive(false);
+				gameObjectPlayer2.SetActive(true);
+				gameObjectPlayer3.SetActive(false);
+				gameObjectPlayer4.SetActive(false);
+				gameObjectPlayer5.SetActive(false);
+
+
 				if (FlagManager.Instance.flags [124] == false)
 				{
 					WaitTime();
@@ -53,6 +68,13 @@ public class Text_MainSE : MonoBehaviour {
 					score.text = "";
 
                     gameObjectKey1.SetActive(false);
+					gameObject2.SetActive(false);
+
+					gameObjectPlayer1.SetActive(true);
+					gameObjectPlayer2.SetActive(false);
+					gameObjectPlayer3.SetActive(false);
+					gameObjectPlayer4.SetActive(false);
+					gameObjectPlayer5.SetActive(false);
 					
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;
@@ -70,6 +92,8 @@ public class Text_MainSE : MonoBehaviour {
 			
 			GameObject gameObject = this.transform.Find ("MainPIC").gameObject;
 			gameObject.SetActive(false);
+			GameObject gameObject2 = this.transform.Find ("MainPIC2").gameObject;
+			gameObject2.SetActive(true);
 			
 			if (FlagManager.Instance.flags [123] == false)
 			{
@@ -100,6 +124,8 @@ public class Text_MainSE : MonoBehaviour {
 				if (FlagManager.Instance.flags [124] == true)
 				{
 					score.text = "";
+
+					gameObject2.SetActive(false);
 					
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;

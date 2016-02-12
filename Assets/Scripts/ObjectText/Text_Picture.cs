@@ -123,6 +123,18 @@ public class Text_Picture : MonoBehaviour {
 			if (FlagManager.Instance.flags [121] == true)
 			{
 				score.text = "………………。\n調べている途中で、絵を落としてしまった！\n危ないから長机に運んでおこう。";
+
+				GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+				GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+				GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+				GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+				GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+				
+				gameObjectPlayer1.SetActive(false);
+				gameObjectPlayer2.SetActive(false);
+				gameObjectPlayer3.SetActive(true);
+				gameObjectPlayer4.SetActive(false);
+				gameObjectPlayer5.SetActive(false);
 				
 				if (FlagManager.Instance.flags [122] == false)
 				{
@@ -138,6 +150,12 @@ public class Text_Picture : MonoBehaviour {
 				if (FlagManager.Instance.flags [122] == true)
 				{
 					score.text = "";
+
+					gameObjectPlayer1.SetActive(true);
+					gameObjectPlayer2.SetActive(false);
+					gameObjectPlayer3.SetActive(false);
+					gameObjectPlayer4.SetActive(false);
+					gameObjectPlayer5.SetActive(false);
 					
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;

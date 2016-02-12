@@ -39,6 +39,18 @@ public class Text_UG : MonoBehaviour {
 			if (FlagManager.Instance.flags [121] == true)
 			{
 				score.text = "床板を引っ張ると、地下への階段が見つかった！\n階段の先は真っ暗だ…\n少しだけ入ってみようかな…";
+
+				GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+				GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+				GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+				GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+				GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+				
+				gameObjectPlayer1.SetActive(false);
+				gameObjectPlayer2.SetActive(false);
+				gameObjectPlayer3.SetActive(true);
+				gameObjectPlayer4.SetActive(false);
+				gameObjectPlayer5.SetActive(false);
 				
 				if (FlagManager.Instance.flags [122] == false)
 				{
@@ -54,6 +66,12 @@ public class Text_UG : MonoBehaviour {
 				if (FlagManager.Instance.flags [122] == true)
 				{
 					score.text = "";
+
+					gameObjectPlayer1.SetActive(true);
+					gameObjectPlayer2.SetActive(false);
+					gameObjectPlayer3.SetActive(false);
+					gameObjectPlayer4.SetActive(false);
+					gameObjectPlayer5.SetActive(false);
 					
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;
@@ -67,6 +85,18 @@ public class Text_UG : MonoBehaviour {
 		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [19] == true && FlagManager.Instance.flags [85] == true && FlagManager.Instance.flags [86] == false && FlagManager.Instance.flags [87] == false)
 		{
 			score.text = "地下につづく階段だ。\n少しだけ入ってみようかな…";
+
+			GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+			GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+			GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+			GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+			GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+			
+			gameObjectPlayer1.SetActive(false);
+			gameObjectPlayer2.SetActive(true);
+			gameObjectPlayer3.SetActive(false);
+			gameObjectPlayer4.SetActive(false);
+			gameObjectPlayer5.SetActive(false);
 			
 			if (FlagManager.Instance.flags [121] == false)
 			{
@@ -82,6 +112,12 @@ public class Text_UG : MonoBehaviour {
 			if (FlagManager.Instance.flags [121] == true)
 			{
 				score.text = "";
+
+				gameObjectPlayer1.SetActive(true);
+				gameObjectPlayer2.SetActive(false);
+				gameObjectPlayer3.SetActive(false);
+				gameObjectPlayer4.SetActive(false);
+				gameObjectPlayer5.SetActive(false);
 
 				WaitTime();
 				FlagManager.Instance.flags [8] = false;
@@ -110,6 +146,18 @@ public class Text_UG : MonoBehaviour {
 			if (FlagManager.Instance.flags [121] == true)
 			{
 				score.text = "暗くて怖いので、もう入るのはやめておこう…";
+
+				GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+				GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+				GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+				GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+				GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+				
+				gameObjectPlayer1.SetActive(false);
+				gameObjectPlayer2.SetActive(true);
+				gameObjectPlayer3.SetActive(false);
+				gameObjectPlayer4.SetActive(false);
+				gameObjectPlayer5.SetActive(false);
 				
 				if (FlagManager.Instance.flags [122] == false)
 				{
@@ -125,6 +173,12 @@ public class Text_UG : MonoBehaviour {
 				if (FlagManager.Instance.flags [122] == true)
 				{
 					score.text = "";
+
+					gameObjectPlayer1.SetActive(true);
+					gameObjectPlayer2.SetActive(false);
+					gameObjectPlayer3.SetActive(false);
+					gameObjectPlayer4.SetActive(false);
+					gameObjectPlayer5.SetActive(false);
 					
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;
@@ -153,6 +207,18 @@ public class Text_UG : MonoBehaviour {
 			if (FlagManager.Instance.flags [121] == true)
 			{
 				score.text = "階段の底は暗然としている。\n暗くて怖いので、もう入るのはやめておこう…";
+
+				GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+				GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+				GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+				GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+				GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+				
+				gameObjectPlayer1.SetActive(false);
+				gameObjectPlayer2.SetActive(true);
+				gameObjectPlayer3.SetActive(false);
+				gameObjectPlayer4.SetActive(false);
+				gameObjectPlayer5.SetActive(false);
 				
 				if (FlagManager.Instance.flags [122] == false)
 				{
@@ -168,6 +234,12 @@ public class Text_UG : MonoBehaviour {
 				if (FlagManager.Instance.flags [122] == true)
 				{
 					score.text = "";
+
+					gameObjectPlayer1.SetActive(true);
+					gameObjectPlayer2.SetActive(false);
+					gameObjectPlayer3.SetActive(false);
+					gameObjectPlayer4.SetActive(false);
+					gameObjectPlayer5.SetActive(false);
 					
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;

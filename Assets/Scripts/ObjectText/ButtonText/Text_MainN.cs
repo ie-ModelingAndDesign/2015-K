@@ -83,6 +83,18 @@ public class Text_MainN : MonoBehaviour {
 				
 				GameObject gameObjectKami5 = this.transform.Find ("Kami5PIC").gameObject;
 				gameObjectKami5.SetActive(true);
+
+				GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+				GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+				GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+				GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+				GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+				
+				gameObjectPlayer1.SetActive(false);
+				gameObjectPlayer2.SetActive(true);
+				gameObjectPlayer3.SetActive(false);
+				gameObjectPlayer4.SetActive(false);
+				gameObjectPlayer5.SetActive(false);
 				
 				if (FlagManager.Instance.flags [124] == false)
 				{
@@ -101,6 +113,12 @@ public class Text_MainN : MonoBehaviour {
 					
 					gameObject2.SetActive(false);
 					gameObjectKami5.SetActive(false);
+
+					gameObjectPlayer1.SetActive(true);
+					gameObjectPlayer2.SetActive(false);
+					gameObjectPlayer3.SetActive(false);
+					gameObjectPlayer4.SetActive(false);
+					gameObjectPlayer5.SetActive(false);
 					
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;
@@ -138,6 +156,18 @@ public class Text_MainN : MonoBehaviour {
 				
 				GameObject gameObjectKami5 = this.transform.Find ("Kami5PIC").gameObject;
 				gameObjectKami5.SetActive(true);
+
+				GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+				GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+				GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+				GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+				GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+				
+				gameObjectPlayer1.SetActive(false);
+				gameObjectPlayer2.SetActive(true);
+				gameObjectPlayer3.SetActive(false);
+				gameObjectPlayer4.SetActive(false);
+				gameObjectPlayer5.SetActive(false);
 				
 				if (FlagManager.Instance.flags [124] == false)
 				{
@@ -156,7 +186,13 @@ public class Text_MainN : MonoBehaviour {
 					
 					gameObject2.SetActive(false);
 					gameObjectKami5.SetActive(false);
-					
+
+					gameObjectPlayer1.SetActive(true);
+					gameObjectPlayer2.SetActive(false);
+					gameObjectPlayer3.SetActive(false);
+					gameObjectPlayer4.SetActive(false);
+					gameObjectPlayer5.SetActive(false);
+
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;
 					FlagManager.Instance.flags [18] = false;

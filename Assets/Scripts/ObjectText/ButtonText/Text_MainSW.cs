@@ -18,6 +18,8 @@ public class Text_MainSW : MonoBehaviour {
 
 			GameObject gameObject = this.transform.Find ("MainPIC").gameObject;
 			gameObject.SetActive(false);
+			GameObject gameObject2 = this.transform.Find ("MainPIC2").gameObject;
+			gameObject2.SetActive(true);
 			
 			if (FlagManager.Instance.flags [123] == false)
 			{
@@ -48,6 +50,8 @@ public class Text_MainSW : MonoBehaviour {
 				if (FlagManager.Instance.flags [124] == true)
 				{
 					score.text = "";
+
+					gameObject2.SetActive(false);
 					
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;
