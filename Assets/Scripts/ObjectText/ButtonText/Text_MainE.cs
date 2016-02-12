@@ -12,7 +12,7 @@ public class Text_MainE : MonoBehaviour {
 	// 22文字まで(全角・句読点含む)
 	
 	void Update () {
-		if (FlagManager.Instance.flags[107] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [45] == false && FlagManager.Instance.flags [91] == true)
+		if (FlagManager.Instance.flags[107] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [45] == false && FlagManager.Instance.flags [91] == false)
 		{
 			score.text = "右の引き出しは開かない…";
 
@@ -57,7 +57,7 @@ public class Text_MainE : MonoBehaviour {
 			}
 		}
 
-		if (FlagManager.Instance.flags[103] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [45] == true && FlagManager.Instance.flags [91] == false)
+		if (FlagManager.Instance.flags[107] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [45] == true && FlagManager.Instance.flags [91] == false)
 		{
 			score.text = "鍵は鍵穴にぴったりはまった。\nこの引き出しの鍵だったみたいだ。";
 			
@@ -79,10 +79,10 @@ public class Text_MainE : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [123] == true)
 			{
-				score.text = "また1枚の紙切れが入っている。\nエノマワリヲシラベロ…";
+				score.text = "「(テキストはまだない)」と描かれている紙だ。\n(ヒントメッセージ1)\n(ヒントメッセージ2)";
 				
-				GameObject gameObjectKami5 = this.transform.Find ("Kami5PIC").gameObject;
-				gameObjectKami5.SetActive(true);
+				GameObject gameObjectKami7 = this.transform.Find ("Kami7PIC").gameObject;
+				gameObjectKami7.SetActive(true);
 				
 				if (FlagManager.Instance.flags [124] == false)
 				{
@@ -100,13 +100,66 @@ public class Text_MainE : MonoBehaviour {
 					score.text = "";
 					
 					gameObject2.SetActive(false);
-					gameObjectKami5.SetActive(false);
+					gameObjectKami7.SetActive(false);
 					
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;
 					FlagManager.Instance.flags [18] = false;
 					FlagManager.Instance.flags [70] = true;
 					FlagManager.Instance.flags [91] = true;
+					FlagManager.Instance.flags [107] = false;
+				}
+			}
+		}
+
+		if (FlagManager.Instance.flags[107] == true && FlagManager.Instance.flags [18] == true && FlagManager.Instance.flags [91] == true)
+		{
+			score.text = "星形の鍵で開いた引き出しだ。\nこれで、記号が描かれた引き出しは\n全部開けたことになる。";
+			
+			GameObject gameObject = this.transform.Find ("MainPIC").gameObject;
+			gameObject.SetActive(false);
+			GameObject gameObject2 = this.transform.Find ("MainPIC2").gameObject;
+			gameObject2.SetActive(true);
+			
+			if (FlagManager.Instance.flags [123] == false)
+			{
+				WaitTime();
+				
+				if (FlagManager.Instance.flags [0] == true)
+				{
+					FlagManager.Instance.flags [123] = true;
+					FlagManager.Instance.flags [101] = false;
+				}
+			}
+			
+			if (FlagManager.Instance.flags [123] == true)
+			{
+				score.text = "ここにも、問題が書かれた紙切れが入っていた。\n……どういうことだろう？";
+				
+				GameObject gameObjectKami7 = this.transform.Find ("Kami7PIC").gameObject;
+				gameObjectKami7.SetActive(true);
+				
+				if (FlagManager.Instance.flags [124] == false)
+				{
+					WaitTime();
+					
+					if (FlagManager.Instance.flags [0] == true)
+					{
+						FlagManager.Instance.flags [124] = true;
+						FlagManager.Instance.flags [101] = false;
+					}
+				}
+				
+				if (FlagManager.Instance.flags [124] == true)
+				{
+					score.text = "";
+					
+					gameObject2.SetActive(false);
+					gameObjectKami7.SetActive(false);
+					
+					WaitTime();
+					FlagManager.Instance.flags [8] = false;
+					FlagManager.Instance.flags [18] = false;
 					FlagManager.Instance.flags [107] = false;
 				}
 			}
