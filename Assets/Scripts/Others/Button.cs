@@ -14,7 +14,7 @@ public class Button : MonoBehaviour {
 
 	// do not touch -> false add!
 	public void Click () {
-		if (FlagManager.Instance.flags [6] == true) {
+		if (FlagManager.Instance.flags [6] == true && FlagManager.Instance.flags[9] == false) {
 			Debug.Log ("mymt");
 			FlagManager.Instance.flags [0] = true;
 		}
