@@ -63,7 +63,7 @@ public class Text_Picture : MonoBehaviour {
 			}
 		}
 
-		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [15] == true && FlagManager.Instance.flags [88] == true && FlagManager.Instance.flags [89] == false && i < 6)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [15] == true && FlagManager.Instance.flags [88] == true && FlagManager.Instance.flags [89] == false && i < 5)
 		{
 			score.text = "壁に絵がかかっている。調べてみよう。";
 			
@@ -105,7 +105,7 @@ public class Text_Picture : MonoBehaviour {
 			}
 		}
 
-		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [15] == true && FlagManager.Instance.flags [88] == true && FlagManager.Instance.flags [89] == false && i == 6)
+		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [15] == true && FlagManager.Instance.flags [88] == true && FlagManager.Instance.flags [89] == false && i == 5)
 		{
 			score.text = "壁に絵がかかっている。調べてみよう。";
 			

@@ -106,26 +106,48 @@ public class Text_MainE : MonoBehaviour {
 						FlagManager.Instance.flags [101] = false;
 					}
 				}
-				
+
 				if (FlagManager.Instance.flags [124] == true)
 				{
-					score.text = "";
-					
-					gameObject2.SetActive(false);
-					gameObjectKami7.SetActive(false);
+					score.text = "「(テキストはまだない)」と描かれている紙だ。\n(ヒントメッセージ3)\n(ヒントメッセージ4)";
 
-					gameObjectPlayer1.SetActive(true);
-					gameObjectPlayer2.SetActive(false);
-					gameObjectPlayer3.SetActive(false);
-					gameObjectPlayer4.SetActive(false);
-					gameObjectPlayer5.SetActive(false);
+					gameObjectKami7.SetActive(false);
+					GameObject gameObjectKami8 = this.transform.Find ("Kami8PIC").gameObject;
+					gameObjectKami8.SetActive(true);
 					
-					WaitTime();
-					FlagManager.Instance.flags [8] = false;
-					FlagManager.Instance.flags [18] = false;
-					FlagManager.Instance.flags [70] = true;
-					FlagManager.Instance.flags [91] = true;
-					FlagManager.Instance.flags [107] = false;
+					if (FlagManager.Instance.flags [125] == false)
+					{
+						WaitTime();
+						
+						if (FlagManager.Instance.flags [0] == true)
+						{
+							FlagManager.Instance.flags [125] = true;
+							FlagManager.Instance.flags [101] = false;
+						}
+					}
+
+					if (FlagManager.Instance.flags [125] == true)
+					{
+						score.text = "";
+					
+						gameObject2.SetActive(false);
+						gameObjectKami8.SetActive(false);
+
+						gameObjectPlayer1.SetActive(true);
+						gameObjectPlayer2.SetActive(false);
+						gameObjectPlayer3.SetActive(false);
+						gameObjectPlayer4.SetActive(false);
+						gameObjectPlayer5.SetActive(false);
+
+						WaitTime();
+
+						FlagManager.Instance.flags [8] = false;
+						FlagManager.Instance.flags [18] = false;
+						FlagManager.Instance.flags [70] = true;
+						FlagManager.Instance.flags [71] = true;
+						FlagManager.Instance.flags [91] = true;
+						FlagManager.Instance.flags [107] = false;
+					}
 				}
 			}
 		}

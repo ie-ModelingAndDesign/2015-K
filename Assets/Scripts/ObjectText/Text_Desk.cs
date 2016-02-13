@@ -139,7 +139,7 @@ public class Text_Desk : MonoBehaviour {
 						
 						if (FlagManager.Instance.flags [124] == true)
 						{
-							score.text = "例に漏れず紙切れも入っているので、\nこの紙だけは持っておこうかな。";
+							score.text = "いつも通り紙切れも入っているので、\nこの紙だけは持っておこうかな。";
 
 							GameObject gameObjectKami6 = this.transform.Find ("Kami6PIC").gameObject;
 							gameObjectPicPic.SetActive(false);
