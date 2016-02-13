@@ -5,6 +5,8 @@ using UnityEngine.UI;
 public class SafeMove : MonoBehaviour {
 	
 	public Text score;
+
+	SafeNum569 safeNum569;
 	
 	// Use this for initialization
 	void Start () {
@@ -17,6 +19,9 @@ public class SafeMove : MonoBehaviour {
 	}
 	
 	public void Click () {
+
+		safeNum569 = GetComponent<SafeNum569>();
+		safeNum569.count = 0;
 
 		score.text = "";
 
