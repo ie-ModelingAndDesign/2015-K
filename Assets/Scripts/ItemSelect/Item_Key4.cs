@@ -36,6 +36,9 @@ public class Item_Key4 : MonoBehaviour {
 			FlagManager.Instance.flags [55] = false;
 			FlagManager.Instance.flags [7] = true;
 			gameObject.SetActive(true);
+
+			GameObject gameObjectA = this.transform.Find ("TextKey4").gameObject;
+			gameObjectA.SetActive(true);
 		}
 	}
 }

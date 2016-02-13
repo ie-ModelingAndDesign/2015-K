@@ -36,6 +36,9 @@ public class Item_Kami5 : MonoBehaviour {
 			FlagManager.Instance.flags [55] = false;
 			FlagManager.Instance.flags [7] = true;
 			gameObject.SetActive(true);
+
+			GameObject gameObjectA = this.transform.Find ("TextKami5").gameObject;
+			gameObjectA.SetActive(true);
 		}
 	}
 }
