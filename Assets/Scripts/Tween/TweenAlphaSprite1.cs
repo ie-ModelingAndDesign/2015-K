@@ -93,13 +93,39 @@ public class TweenAlphaSprite1 : MonoBehaviour
 		// Fade終了時
 		float finishAlpha = reverse ? fromAlpha : toAlpha;
 		if (tempColor.a == finishAlpha) {
-			Application.LoadLevel ("Stage");
+
+			FlagManager.Instance.flags [111] = false;
+			FlagManager.Instance.flags [112] = false;
+			FlagManager.Instance.flags [113] = false;
+			FlagManager.Instance.flags [114] = false;
+			FlagManager.Instance.flags [115] = false;
+			FlagManager.Instance.flags [116] = false;
+			FlagManager.Instance.flags [100] = false;
+			
+			FlagManager.Instance.flags [9] = false;
+			
+			FlagManager.Instance.flags [8] = false;
+
+			Application.LoadLevel ("Stage2");
 			// 再生形式毎処理
 			switch (playStyle) {
 			case PLAY_STYLE.Once:
 				// 通知設定がある場合は通知を投げる
 				if (eventReceiver != null && !string.IsNullOrEmpty (callWhenFinished)) {
-					Application.LoadLevel ("Stage");
+
+					FlagManager.Instance.flags [111] = false;
+					FlagManager.Instance.flags [112] = false;
+					FlagManager.Instance.flags [113] = false;
+					FlagManager.Instance.flags [114] = false;
+					FlagManager.Instance.flags [115] = false;
+					FlagManager.Instance.flags [116] = false;
+					FlagManager.Instance.flags [100] = false;
+					
+					FlagManager.Instance.flags [9] = false;
+					
+					FlagManager.Instance.flags [8] = false;
+
+					Application.LoadLevel ("Stage2");
 				}
 				// 停止
 				Stop ();

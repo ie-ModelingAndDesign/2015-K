@@ -94,11 +94,15 @@ public class TweenAlphaSprite_to_title : MonoBehaviour
 		float finishAlpha = reverse ? fromAlpha : toAlpha;
 		if (tempColor.a == finishAlpha) {
 
+			Application.LoadLevel ("title");
+
 			// 再生形式毎処理
 			switch (playStyle) {
 			case PLAY_STYLE.Once:
 				// 通知設定がある場合は通知を投げる
 				if (eventReceiver != null && !string.IsNullOrEmpty (callWhenFinished)) {
+
+					Application.LoadLevel ("title");
 
 				}
 				// 停止
