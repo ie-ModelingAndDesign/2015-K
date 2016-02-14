@@ -23,7 +23,7 @@ public class Text_Desk : MonoBehaviour {
 	void Update () {
 		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [16] == true && FlagManager.Instance.flags [89] == false && FlagManager.Instance.flags [90] == false)
 		{
-			score.text = "おばあちゃんがずっと使っていた長机だ。";
+			score.text = "ばあちゃんがずっと使っていた長机だ。";
 			
 			if (FlagManager.Instance.flags [121] == false)
 			{
@@ -64,7 +64,7 @@ public class Text_Desk : MonoBehaviour {
 
 		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [16] == true && FlagManager.Instance.flags [89] == true && FlagManager.Instance.flags [90] == false)
 		{
-			score.text = "おばあちゃんがずっと使っていた長机だ。\n古い机なので、塗装は落ちていて、\n表面にはキズが目立つ。";
+			score.text = "ばあちゃんがずっと使っていた長机だ。\n古い机なので、塗装は落ちていて、\n表面にはキズが目立つ。";
 			
 			if (FlagManager.Instance.flags [121] == false)
 			{
@@ -183,7 +183,7 @@ public class Text_Desk : MonoBehaviour {
 
 		if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [16] == true && FlagManager.Instance.flags [89] == true && FlagManager.Instance.flags [90] == true)
 		{
-			score.text = "おばあちゃんがずっと使っていた長机だ。\n古い机なので、塗装は落ちていて、\n表面にはキズが目立つ。";
+			score.text = "ばあちゃんがずっと使っていた長机だ。\n古い机なので、塗装は落ちていて、\n表面にはキズが目立つ。";
 			
 			if (FlagManager.Instance.flags [121] == false)
 			{

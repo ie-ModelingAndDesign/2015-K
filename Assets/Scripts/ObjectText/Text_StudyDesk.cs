@@ -40,7 +40,7 @@ public class Text_StudyDesk : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [121] == true)
 			{
-				score.text = "昔おばあちゃんに買ってもらったものなので、\nとても愛着がある。";
+				score.text = "昔、ばあちゃんに買ってもらったものなので、\nとても愛着がある。";
 				
 				if (FlagManager.Instance.flags [122] == false)
 				{

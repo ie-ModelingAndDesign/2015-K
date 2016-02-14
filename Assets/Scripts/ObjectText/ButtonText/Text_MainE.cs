@@ -79,7 +79,7 @@ public class Text_MainE : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [123] == true)
 			{
-				score.text = "「(テキストはまだない)」と描かれている紙だ。\n(ヒントメッセージ1)\n(ヒントメッセージ2)";
+				score.text = "不思議な図形が描かれている紙だ。\n図形の中には、カタカナも書かれている。";
 				
 				GameObject gameObjectKami7 = this.transform.Find ("Kami7PIC").gameObject;
 				gameObjectKami7.SetActive(true);
@@ -109,7 +109,7 @@ public class Text_MainE : MonoBehaviour {
 
 				if (FlagManager.Instance.flags [124] == true)
 				{
-					score.text = "「(テキストはまだない)」と描かれている紙だ。\n(ヒントメッセージ3)\n(ヒントメッセージ4)";
+					score.text = "一緒にもう1枚紙切れが入っている。\n「本を手に取り、眠る準備を」かな。\n寝るならちゃんとベッドに行かないと…";
 
 					gameObjectKami7.SetActive(false);
 					GameObject gameObjectKami8 = this.transform.Find ("Kami8PIC").gameObject;
