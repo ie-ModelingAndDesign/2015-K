@@ -2,13 +2,12 @@
 using System.Collections; 
 
 
-public class  Button_sukippu_true: MonoBehaviour {
+public class  Button_false: MonoBehaviour {
 	
 	public void OnClick() {
 		Debug.Log ("Button click!");
-		
-		
-		gameObject.SetActive (true);
+
+		gameObject.SetActive (false);
 		
 	}
 	
