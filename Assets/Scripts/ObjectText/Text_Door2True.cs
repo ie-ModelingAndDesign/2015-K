@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class Text_Door2 : MonoBehaviour {
+public class Text_Door2True : MonoBehaviour {
 	
 	public Text score;
 	
@@ -22,7 +22,7 @@ public class Text_Door2 : MonoBehaviour {
 	void Update () {
 		if (FlagManager.Instance.flags [10] == true)
 		{
-			Application.LoadLevel ("end1.2");
+			Application.LoadLevel ("end2.2");
 		}
 	}
 }
