@@ -18,8 +18,8 @@ public class op_Button_tostage : MonoBehaviour {
 		FlagManager.Instance.flags [100] = false;
 
 		FlagManager.Instance.flags [9] = false;
-		
 		FlagManager.Instance.flags [8] = false;
+		FlagManager.Instance.flags [6] = false;
 
 		Application.LoadLevel ("Stage");
 
