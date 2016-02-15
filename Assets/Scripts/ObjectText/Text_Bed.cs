@@ -68,6 +68,7 @@ public class Text_Bed : MonoBehaviour {
 
 		else if (FlagManager.Instance.flags[7] == false && FlagManager.Instance.flags [11] == true && bedd == 7)
 		{
+			FlagManager.Instance.flags [9] = true;
 			Invoke ("wait",2.0f);
 		}
 	}
@@ -83,6 +84,8 @@ public class Text_Bed : MonoBehaviour {
 
 	void wait()
 	{
+		FlagManager.Instance.flags [9] = false;
+
 		score.text = "なんで、食べ物を探すのに\nこんなに歩き回ってるんだろ…\nもう疲れた…寝よう…";
 		
 		if (FlagManager.Instance.flags [121] == false)
