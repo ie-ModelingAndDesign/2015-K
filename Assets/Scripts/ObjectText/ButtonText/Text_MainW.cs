@@ -152,7 +152,7 @@ public class Text_MainW : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [123] == true)
 			{
-				score.text = "紙には、たくさんの矢印が描かれている。\nした、ひだり、した、ひだり、\nした、した、した…";
+				score.text = "紙には、たくさんの矢印が描かれている。\nひだり、ひだり、うえ、うえ、うえ、\nみぎ、うえ、みぎ、うえ…";
 
 				GameObject gameObjectKami3 = this.transform.Find ("Kami3PIC").gameObject;
 				gameObjectKami3.SetActive(true);

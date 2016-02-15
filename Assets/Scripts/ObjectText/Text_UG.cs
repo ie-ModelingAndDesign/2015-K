@@ -48,8 +48,8 @@ public class Text_UG : MonoBehaviour {
 				
 				gameObjectPlayer1.SetActive(false);
 				gameObjectPlayer2.SetActive(false);
-				gameObjectPlayer3.SetActive(true);
-				gameObjectPlayer4.SetActive(false);
+				gameObjectPlayer3.SetActive(false);
+				gameObjectPlayer4.SetActive(true);
 				gameObjectPlayer5.SetActive(false);
 				
 				if (FlagManager.Instance.flags [122] == false)

@@ -23,6 +23,14 @@ public class SafeMove : MonoBehaviour {
 		safeNum569 = GetComponent<SafeNum569>();
 		safeNum569.count = 0;
 
+		FlagManager.Instance.flags [111] = false;
+		FlagManager.Instance.flags [112] = false;
+		FlagManager.Instance.flags [113] = false;
+		FlagManager.Instance.flags [114] = false;
+		FlagManager.Instance.flags [115] = false;
+		FlagManager.Instance.flags [116] = false;
+		FlagManager.Instance.flags [100] = false;
+
 		score.text = "";
 
 		GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;

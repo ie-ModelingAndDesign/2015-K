@@ -36,7 +36,7 @@ public class Text_MainC : MonoBehaviour {
 			{
 				score.text = "中には、1枚の紙切れと金庫が入っている。\n紙切れには、青色の文字が書き連ねられている。";
 
-				GameObject gameObjectKami9 = this.transform.Find ("Kami8PIC").gameObject; //aaaaaaaaaa
+				GameObject gameObjectKami9 = this.transform.Find ("Kami9PIC").gameObject; //aaaaaaaaaa
 				gameObjectKami9.SetActive(true);
 
 				GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;

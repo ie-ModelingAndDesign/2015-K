@@ -152,7 +152,7 @@ public class Text_MainN : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [123] == true)
 			{
-				score.text = "いつもの赤文字で問題が書かれている。\n「絵のまわりを調べろ」ということかな？\nこの筆跡には見覚えがあるような気がする…";
+				score.text = "いつもの赤文字で問題が書かれている。\nこの筆跡は…\n昔亡くなったばあちゃんの字にそっくりだ。";
 				
 				GameObject gameObjectKami5 = this.transform.Find ("Kami5PIC").gameObject;
 				gameObjectKami5.SetActive(true);

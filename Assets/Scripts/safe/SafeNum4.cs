@@ -22,26 +22,58 @@ public class SafeNum4 : MonoBehaviour {
 	{
 		safeNum569 = GetComponent<SafeNum569>();
 		
-		if (safeNum569.count == 0 || safeNum569.count == 2)
-		{
+		if (safeNum569.count == 0 || safeNum569.count == 2) {
 			FlagManager.Instance.flags [111] = false;
 			FlagManager.Instance.flags [112] = false;
 			FlagManager.Instance.flags [113] = false;
 			FlagManager.Instance.flags [114] = false;
 			FlagManager.Instance.flags [115] = false;
 			FlagManager.Instance.flags [116] = false;
+			FlagManager.Instance.flags [100] = false;
 			safeNum569.count++;
 		}
-		
-		else if (safeNum569.count == 1 && FlagManager.Instance.flags [111] == false && FlagManager.Instance.flags [112] == true)
-		{
+
+		else if (safeNum569.count == 1 && FlagManager.Instance.flags [111] == false && FlagManager.Instance.flags [112] == true) {
 			FlagManager.Instance.flags [113] = false;
 			FlagManager.Instance.flags [114] = true;
 			FlagManager.Instance.flags [115] = true;
 			safeNum569.count++;
 		}
 
-		else if (safeNum569.count == 3 && safeNum569.overcount != 4)
+		else if (safeNum569.count == 3 && safeNum569.overcount != 4 && FlagManager.Instance.flags [100] == true)
+		{
+			if (FlagManager.Instance.flags [111] == true && FlagManager.Instance.flags [112] == true && FlagManager.Instance.flags [113] == true && FlagManager.Instance.flags [114] == true && FlagManager.Instance.flags [115] == true)
+			{
+				score.text = "…目の前が突然真っ白になった！\n";
+
+				safeNum569.count = 0;
+				safeNum569.overcount++;
+
+				GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+				GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+				GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+				GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+				GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+				
+				gameObjectPlayer1.SetActive (true);
+				gameObjectPlayer2.SetActive (false);
+				gameObjectPlayer3.SetActive (false);
+				gameObjectPlayer4.SetActive (false);
+				gameObjectPlayer5.SetActive (false);
+
+				GameObject gameObjectsafe = this.transform.Find ("safe").gameObject;
+				gameObjectsafe.SetActive (false);
+
+				FlagManager.Instance.flags [18] = false;
+				FlagManager.Instance.flags [106] = false;
+
+				Debug.Log ("SPECIAL");
+
+				Invoke ("SPECIAL",5.5f);
+			}
+		}
+
+		else if (safeNum569.count == 3 && safeNum569.overcount != 4 && FlagManager.Instance.flags [100] == false)
 		{
 			score.text = "数字が違うみたいだ。\n";
 			
@@ -51,6 +83,7 @@ public class SafeNum4 : MonoBehaviour {
 			FlagManager.Instance.flags [114] = false;
 			FlagManager.Instance.flags [115] = false;
 			FlagManager.Instance.flags [116] = false;
+			FlagManager.Instance.flags [100] = false;
 			
 			safeNum569.count = 0;
 			safeNum569.overcount++;
@@ -79,7 +112,32 @@ public class SafeNum4 : MonoBehaviour {
 		
 		else if (safeNum569.count == 3 && safeNum569.overcount == 4)
 		{
-			score.text = "go to bed ending\n";
+			score.text = "そういえばお腹すいたな…\n全然、食べ物も見つからないし…\nだめだ…もう寝よう……";
+			
+			safeNum569.count = 0;
+			safeNum569.overcount++;
+			
+			GameObject gameObjectPlayer1 = this.transform.Find ("PlayerNormal").gameObject;
+			GameObject gameObjectPlayer2 = this.transform.Find ("PlayerNaki").gameObject;
+			GameObject gameObjectPlayer3 = this.transform.Find ("PlayerOdoroki").gameObject;
+			GameObject gameObjectPlayer4 = this.transform.Find ("PlayerKyohu").gameObject;
+			GameObject gameObjectPlayer5 = this.transform.Find ("PlayerWarai").gameObject;
+			
+			gameObjectPlayer1.SetActive (true);
+			gameObjectPlayer2.SetActive (false);
+			gameObjectPlayer3.SetActive (false);
+			gameObjectPlayer4.SetActive (false);
+			gameObjectPlayer5.SetActive (false);
+			
+			GameObject gameObjectsafe = this.transform.Find ("safe").gameObject;
+			gameObjectsafe.SetActive (false);
+			
+			FlagManager.Instance.flags [18] = false;
+			FlagManager.Instance.flags [106] = false;
+			
+			Debug.Log ("BAD");
+			
+			Invoke ("BAD",5.5f);
 		}
 		
 		else
@@ -90,7 +148,18 @@ public class SafeNum4 : MonoBehaviour {
 			FlagManager.Instance.flags [114] = false;
 			FlagManager.Instance.flags [115] = false;
 			FlagManager.Instance.flags [116] = false;
+			FlagManager.Instance.flags [100] = false;
 			safeNum569.count++;
 		}
+	}
+
+	void SPECIAL()
+	{
+		Application.LoadLevel ("maruti_end5");
+	}
+
+	void BAD()
+	{
+		Application.LoadLevel ("maruti_end3");
 	}
 }
