@@ -11,7 +11,7 @@ public class C_Door : MonoBehaviour {
 	void Update () {
 	}
 	
-	void OnCollisionStay2D (Collision2D collision) {
+	void OnTriggerStay2D (Collider2D collider) {
 		
 		Debug.Log ("collision Door");
 		FlagManager.Instance.flags [6] = true; //sessyoku
@@ -23,7 +23,7 @@ public class C_Door : MonoBehaviour {
 		}
 	}
 	
-	void OnCollisionExit2D (Collision2D collision) {
+	void OnTriggerExit2D (Collider2D collider) {
 		FlagManager.Instance.flags [6] = false;
 	}
 }

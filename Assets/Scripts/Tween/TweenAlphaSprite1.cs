@@ -106,12 +106,16 @@ public class TweenAlphaSprite1 : MonoBehaviour
 			
 			FlagManager.Instance.flags [8] = false;
 
+			FlagManager.Instance.flags [6] = false;
+
 			Application.LoadLevel ("Stage2");
+
 			// 再生形式毎処理
 			switch (playStyle) {
 			case PLAY_STYLE.Once:
 				// 通知設定がある場合は通知を投げる
 				if (eventReceiver != null && !string.IsNullOrEmpty (callWhenFinished)) {
+
 
 					FlagManager.Instance.flags [111] = false;
 					FlagManager.Instance.flags [112] = false;
@@ -124,6 +128,8 @@ public class TweenAlphaSprite1 : MonoBehaviour
 					FlagManager.Instance.flags [9] = false;
 					
 					FlagManager.Instance.flags [8] = false;
+
+					FlagManager.Instance.flags [6] = false;
 
 					Application.LoadLevel ("Stage2");
 				}

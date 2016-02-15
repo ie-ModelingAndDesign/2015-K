@@ -17,6 +17,8 @@ public class op_Button_emptystage : MonoBehaviour {
 		
 		FlagManager.Instance.flags [8] = false;
 
+		FlagManager.Instance.flags [6] = false;
+
 		Application.LoadLevel ("Stage2");
 		
 	}
