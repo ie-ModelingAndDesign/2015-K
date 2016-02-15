@@ -123,6 +123,6 @@ public class SafeNum3 : MonoBehaviour {
 
 	void BAD()
 	{
-		Application.LoadLevel ("maruti_end3");
+		Application.LoadLevel ("end3");
 	}
 }

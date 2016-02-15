@@ -94,11 +94,7 @@ public class TweenAlphaSprite_to_title : MonoBehaviour
 		float finishAlpha = reverse ? fromAlpha : toAlpha;
 		if (tempColor.a == finishAlpha) {
 
-			if (FlagManager.Instance.flags [120] == false)
 				Application.LoadLevel ("title");
-
-			else if (FlagManager.Instance.flags [120] == true)
-				Application.LoadLevel ("maruti_end2");
 
 			// 再生形式毎処理
 			switch (playStyle) {
@@ -106,11 +102,7 @@ public class TweenAlphaSprite_to_title : MonoBehaviour
 				// 通知設定がある場合は通知を投げる
 				if (eventReceiver != null && !string.IsNullOrEmpty (callWhenFinished)) {
 
-					if (FlagManager.Instance.flags [120] == false)
 						Application.LoadLevel ("title");
-					
-					else if (FlagManager.Instance.flags [120] == true)
-						Application.LoadLevel ("maruti_end2");
 
 				}
 				// 停止

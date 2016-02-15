@@ -155,11 +155,11 @@ public class SafeNum4 : MonoBehaviour {
 
 	void SPECIAL()
 	{
-		Application.LoadLevel ("maruti_end5");
+		Application.LoadLevel ("end5");
 	}
 
 	void BAD()
 	{
-		Application.LoadLevel ("maruti_end3");
+		Application.LoadLevel ("end3");
 	}
 }

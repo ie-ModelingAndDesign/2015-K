@@ -147,6 +147,6 @@ public class SafeNum2 : MonoBehaviour {
 
 	void BAD()
 	{
-		Application.LoadLevel ("maruti_end3");
+		Application.LoadLevel ("end3");
 	}
 }

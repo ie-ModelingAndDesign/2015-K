@@ -197,17 +197,16 @@ public class SafeNum0 : MonoBehaviour {
 
 	void GOOD()
 	{
-		FlagManager.Instance.flags [120] = true;
-		Application.LoadLevel ("epiro-gu1");
+		Application.LoadLevel ("end2.1");
 	}
 	
 	void NORMAL()
 	{
-		Application.LoadLevel ("epiro-gu1");
+		Application.LoadLevel ("end1.1");
 	}
 
 	void BAD()
 	{
-		Application.LoadLevel ("maruti_end3");
+		Application.LoadLevel ("end3");
 	}
 }

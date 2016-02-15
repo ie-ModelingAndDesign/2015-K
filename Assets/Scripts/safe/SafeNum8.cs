@@ -180,11 +180,11 @@ public class SafeNum8 : MonoBehaviour {
 
 	void BAD()
 	{
-		Application.LoadLevel ("maruti_end3");
+		Application.LoadLevel ("end3");
 	}
 
 	void NORMAL()
 	{
-		Application.LoadLevel ("epiro-gu1");
+		Application.LoadLevel ("end1.1");
 	}
 }
