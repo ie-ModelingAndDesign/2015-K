@@ -4,6 +4,7 @@ using System.Collections;
 public class AllFlagReset : MonoBehaviour {
 
 	SafeNum569 safeNum569;
+	Text_Bed   text_Bed;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +13,10 @@ public class AllFlagReset : MonoBehaviour {
 
 		safeNum569.count = 0;
 		safeNum569.overcount = 0;
+
+		text_Bed = GetComponent<Text_Bed>();
+
+		//text_Bed.bedd = 0;
 
 		FlagManager.Instance.flags [0] = false;
 		FlagManager.Instance.flags [1] = false;
@@ -151,6 +156,10 @@ public class AllFlagReset : MonoBehaviour {
 		
 		safeNum569.count = 0;
 		safeNum569.overcount = 0;
+
+		text_Bed = GetComponent<Text_Bed>();
+		
+		//text_Bed.bedd = 0;
 		
 		FlagManager.Instance.flags [0] = false;
 		FlagManager.Instance.flags [1] = false;
