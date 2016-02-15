@@ -37,7 +37,7 @@ public class Text_Shelf : MonoBehaviour {
 			
 			if (FlagManager.Instance.flags [121] == true)
 			{
-				score.text = "おなかがすいた…\nはやく食べ物を探さないと…";
+				score.text = "おなかがすいた…\n何か食べ物を探さないと…";
 				
 				if (FlagManager.Instance.flags [122] == false)
 				{

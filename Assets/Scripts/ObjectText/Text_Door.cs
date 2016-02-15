@@ -57,6 +57,7 @@ public class Text_Door : MonoBehaviour {
 					WaitTime();
 					FlagManager.Instance.flags [8] = false;
 					FlagManager.Instance.flags [10] = false;
+					FlagManager.Instance.flags [118] = true;
 				}
 			}
 		}

@@ -197,6 +197,8 @@ public class Text_MainN : MonoBehaviour {
 					FlagManager.Instance.flags [8] = false;
 					FlagManager.Instance.flags [18] = false;
 					FlagManager.Instance.flags [103] = false;
+
+					FlagManager.Instance.flags [117] = true;
 				}
 			}
 		}
